@@ -1,0 +1,19 @@
+Directory for Tim Waterman Webscrapping Files:
+
+SCRAPE:
+	-PDF of final presentation (Growth_in_Media_Coverage_Surrounding_Deaths_of_Despair_in_States_Hit_Hardest_by_Opioids)
+	-PTR folder (Pennsylvania Documents)
+	-MSJ folder (Wisconsin Documents)
+	-DEO folder (Delaware Documents)
+
+PTR:
+	-folders containing Selenium dcouments for 5 scrapes corresponding to different key words
+MSJ:
+	-folders containing Selenium dcouments for 5 scrapes corresponding to different key words
+
+DEO:
+	-folders containing Selenium dcouments for 5 scrapes corresponding to different key words
+	-csv files containing aggregation of webscrapping data across all 15 scrapes
+	-R documents cntaining the code to support the above, aggregated CSV files
+	-R documents containing the coding for graphical representations of findings
+	-references for external mortality data incorporated into findings

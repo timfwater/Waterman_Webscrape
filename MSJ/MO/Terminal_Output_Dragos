@@ -1,0 +1,962 @@
+Last login: Wed Oct 10 16:20:39 on console
+Tims-MBP:~ twaterman$ https://brew.sh/
+-bash: https://brew.sh/: No such file or directory
+Tims-MBP:~ twaterman$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+/usr/local/Homebrew
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/mkdir -p /Library/Caches/Homebrew
+Password:
+==> /usr/bin/sudo /bin/chmod g+rwx /Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown twaterman /Library/Caches/Homebrew
+==> Downloading and installing Homebrew...
+remote: Enumerating objects: 421, done.
+remote: Counting objects: 100% (421/421), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 734 (delta 407), reused 421 (delta 407), pack-reused 313
+Receiving objects: 100% (734/734), 304.40 KiB | 12.68 MiB/s, done.
+Resolving deltas: 100% (429/429), completed with 156 local objects.
+From https://github.com/Homebrew/brew
+   ff3cede96..17154abf4  master     -> origin/master
+ * [new tag]             1.7.7      -> 1.7.7
+HEAD is now at 17154abf4 Merge pull request #5076 from aimileus/search-perf
+Updated 2 taps (homebrew/cask and homebrew/core).
+==> Migrating /Library/Caches/Homebrew to /Users/twaterman/Library/Caches/Homebr
+==> Deleting /Library/Caches/Homebrew...
+==> New Formulae
+c-blosc         i2pd            libcerf         objfw           rke
+==> Updated Formulae
+apache-geode                             librealsense
+apache-spark                             libvirt
+app-engine-java                          mariadb
+arangodb                                 meson
+ark                                      micronaut
+autopep8                                 mkdocs
+aws-elasticbeanstalk                     mkvtoolnix
+awscli                                   mpv
+bento4                                   mscgen
+bitcoin                                  mupdf
+blink1                                   mupdf-tools
+carthage                                 ne
+cheat                                    nexus
+checkbashisms                            nodebrew
+circleci                                 nomad
+cloc                                     orc-tools
+conan                                    pandoc-citeproc
+convox                                   passpie
+cvs2svn                                  phoronix-test-suite
+elm-format                               php-code-sniffer
+embulk                                   phpunit
+exercism                                 picat
+fail2ban                                 pipenv
+flatbuffers                              proselint
+fn                                       remarshal
+futhark                                  roswell
+fzf                                      rustup-init
+git                                      sbt
+git-annex                                softhsm
+git-standup                              strongswan
+grakn                                    swiftgen
+grip                                     teleport
+highlight                                terraform-docs
+hledger                                  terragrunt
+hmmer                                    texmath
+hugo                                     tinc
+hyperfine                                topgrade
+i2p                                      unrar
+ipv6calc                                 wireguard-tools
+jbake                                    x265
+jenkins                                  yamllint
+jhipster                                 ykman
+juju                                     youtube-dl
+kubernetes-service-catalog-client        yubico-piv-tool
+libepoxy                                 zenity
+libheif                                  zstd
+libphonenumber
+==> Deleted Formulae
+hachoir-metadata           queequeg                   sickbeard
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics.html
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+==> Next steps:
+- Run `brew help` to get started
+- Further documentation: 
+    https://docs.brew.sh
+Tims-MBP:~ twaterman$ brew install chromedriver
+Error: No available formula with the name "chromedriver" 
+It was migrated from homebrew/core to homebrew/cask.
+You can access it again by running:
+  brew tap homebrew/cask
+And then you can install it by running:
+  brew cask install chromedriver
+Tims-MBP:~ twaterman$ brew tap homebrew/cask
+Tims-MBP:~ twaterman$ pip install -r requirements.txt
+Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+You are using pip version 9.0.1, however version 18.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Tims-MBP:~ twaterman$ cd ~/Desktop/MSJO2
+Tims-MBP:MSJO2 twaterman$ pip install -r requirements.txt
+Requirement already satisfied: selenium==3.8.1 in /Users/twaterman/anaconda3/lib/python3.6/site-packages (from -r requirements.txt (line 1))
+You are using pip version 9.0.1, however version 18.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+Traceback (most recent call last):
+  File "MSJO_2_starter.py", line 9, in <module>
+    Date = driver.find_elements_by_xpath('.//span[@class="date-created meta-info-text"]/text()')
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 401, in find_elements_by_xpath
+    return self.find_elements(by=By.XPATH, value=xpath)
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 983, in find_elements
+    'value': value})['value'] or []
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 237, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: The result of the xpath expression ".//span[@class="date-created meta-info-text"]/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.12.6 x86_64)
+
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+20
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+10
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+30
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+20
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+10
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+334
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+Traceback (most recent call last):
+  File "MSJO_2_starter.py", line 33, in <module>
+    print(len(Title))
+TypeError: object of type 'WebElement' has no len()
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+Traceback (most recent call last):
+  File "MSJO_2_starter.py", line 30, in <module>
+    Title = item.find_element_by_xpath('.//h3[@class="search-result-title-back search-results-headline"]').text
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 351, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 645, in find_element
+    {"using": by, "value": value})['value']
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 628, in _execute
+    return self._parent.execute(command, params)
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 237, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//h3[@class="search-result-title-back search-results-headline"]"}
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.12.6 x86_64)
+
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Senate hearing searches for common ground on heroin scourge
+From Adderall to meth — and finally recovery
+Fired Tomah VA chief to surrender medical license
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+May 30, 2016
+
+Feb 15, 2017
+Jim Sensenbrenner: Criminal justice reform needed for Wisconsin, nation
+Mar 6, 2016
+Senate probe finds VA watchdog botched Tomah vet care review
+May 29, 2016
+Triple homicide suspect had guns taken, then released in ’08
+Mar 15, 2016
+Tims-MBP:MSJO2 twaterman$ 

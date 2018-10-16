@@ -1,0 +1,310 @@
+Last login: Thu Oct 11 14:20:41 on ttys003
+Tims-MBP:~ twaterman$ cd ~/Desktop/MSJO2
+Tims-MBP:MSJO2 twaterman$ PWD
+/Users/twaterman/Desktop/MSJO2
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+Traceback (most recent call last):
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 76, in start
+    stdin=PIPE)
+  File "/Users/twaterman/anaconda3/lib/python3.6/subprocess.py", line 709, in __init__
+    restore_signals, start_new_session)
+  File "/Users/twaterman/anaconda3/lib/python3.6/subprocess.py", line 1344, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\hello\\Desktop\\chromedriver.exe': 'C:\\Users\\hello\\Desktop\\chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "MSJO_2_starter.py", line 4, in <module>
+    driver = webdriver.Chrome(r'C:\Users\hello\Desktop\chromedriver.exe')
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/chrome/webdriver.py", line 68, in __init__
+    self.service.start()
+  File "/Users/twaterman/anaconda3/lib/python3.6/site-packages/selenium/webdriver/common/service.py", line 83, in start
+    os.path.basename(self.path), self.start_error_message)
+selenium.common.exceptions.WebDriverException: Message: 'C:\Users\hello\Desktop\chromedriver.exe' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+close window
+Opioids: Rein in health insurers
+Oct 6, 2018
+Wisconsin is dealing with the opioid epidemic
+Aug 16, 2018
+Pharmacy owner, pharmacist accused of fraud
+Sep 6, 2018
+Father charged in opioid death of 1-year-old
+Aug 4, 2018
+Kevin Nicholson on opioids
+Jul 3, 2018
+How some Wisconsin jails treat heroin addiction
+Aug 17, 2018
+Is a Wisconsin law to expand Narcan access working?
+Aug 23, 2018
+Waukesha County sues opioid industry
+Jul 17, 2018
+Attorneys general urge 'swift passage' of opioid bill spurred by local death
+Aug 23, 2018
+Kevin Nicholson discusses opioids
+Jul 3, 2018
+Man convicted in girlfriend's fatal overdose
+Jul 13, 2018
+Ryan: Congress cracks down on opioid epidemic
+Jun 12, 2018
+Opioid addiction is a brain disease: researcher
+Jul 2, 2018
+Pewaukee man charged with 9th OWI
+Jun 29, 2018
+Pawning stolen items helps addicts get their fix
+Jul 2, 2018
+Woman experiences overdose after OWI arrest
+Jun 27, 2018
+Wisconsin's opioid crises
+Jan 26, 2018
+Would medical marijuana reduce opioid deaths?
+Jun 6, 2018
+Woman runs ultra marathon to fight opioid epidemic
+May 25, 2018
+Man allegedly on drugs crashes car at hotel
+Aug 8, 2018
+3 officers treated for exposure to substances
+May 26, 2018
+Student hiking over 2K miles to help fight opioid crisis
+Jun 13, 2018
+Man charged in daughter's overdose death headed to trial
+Jul 16, 2018
+BadgerCare rules are a barrier in opioid fight
+May 11, 2018
+Kevin Nicholson: Combat opioids by cutting demand
+Jul 3, 2018
+Tosa 'pill mill' named in fraud indictment
+Jun 29, 2018
+Feds suspect pain clinic is opioid 'pill mill'
+Apr 7, 2018
+'Sober living' house at risk after opioid deaths
+May 28, 2018
+Welcome to the Ideas Lab
+May 29, 2018
+Tammy Baldwin discusses her late mother’s addiction with Morgan Thomas of Milwaukee
+May 1, 2018
+Tims-MBP:MSJO2 twaterman$ python MSJO_2_starter.py
+close window
+Opioids: Rein in health insurers
+Oct 6, 2018
+Wisconsin is dealing with the opioid epidemic
+Aug 16, 2018
+Pharmacy owner, pharmacist accused of fraud
+Sep 6, 2018
+Father charged in opioid death of 1-year-old
+Aug 4, 2018
+Kevin Nicholson on opioids
+Jul 3, 2018
+How some Wisconsin jails treat heroin addiction
+Aug 17, 2018
+Is a Wisconsin law to expand Narcan access working?
+Aug 23, 2018
+Waukesha County sues opioid industry
+Jul 17, 2018
+Attorneys general urge 'swift passage' of opioid bill spurred by local death
+Aug 23, 2018
+Kevin Nicholson discusses opioids
+Jul 3, 2018
+Man convicted in girlfriend's fatal overdose
+Jul 13, 2018
+Ryan: Congress cracks down on opioid epidemic
+Jun 12, 2018
+Opioid addiction is a brain disease: researcher
+Jul 2, 2018
+Pewaukee man charged with 9th OWI
+Jun 29, 2018
+Pawning stolen items helps addicts get their fix
+Jul 2, 2018
+Woman experiences overdose after OWI arrest
+Jun 27, 2018
+Wisconsin's opioid crises
+Jan 26, 2018
+Would medical marijuana reduce opioid deaths?
+Jun 6, 2018
+Woman runs ultra marathon to fight opioid epidemic
+May 25, 2018
+Man allegedly on drugs crashes car at hotel
+Aug 8, 2018
+3 officers treated for exposure to substances
+May 26, 2018
+Student hiking over 2K miles to help fight opioid crisis
+Jun 13, 2018
+Man charged in daughter's overdose death headed to trial
+Jul 16, 2018
+BadgerCare rules are a barrier in opioid fight
+May 11, 2018
+Kevin Nicholson: Combat opioids by cutting demand
+Jul 3, 2018
+Tosa 'pill mill' named in fraud indictment
+Jun 29, 2018
+Feds suspect pain clinic is opioid 'pill mill'
+Apr 7, 2018
+'Sober living' house at risk after opioid deaths
+May 28, 2018
+Welcome to the Ideas Lab
+May 29, 2018
+Tammy Baldwin discusses her late mother’s addiction with Morgan Thomas of Milwaukee
+May 1, 2018
+County sues drug-makers, distributors over opioid crisis
+Mar 14, 2018
+Helping overdose victims easier said than done
+May 17, 2018
+Driver overdoses with child in car
+May 30, 2018
+Man charged after officers exposed to fentanyl
+May 31, 2018
+Marquette law school grad grabs second chance
+May 18, 2018
+Just the FAQs: Impact of opioids on children
+Mar 13, 2018
+How medication can treat opioid addiction
+Apr 17, 2018
+PHOTOS: Childhood trauma data explodes myth of 'not in my small town'
+Dec 3, 2017
+How to end the opioid crisis in seven steps
+Jan 15, 2018
+Baldwin discusses her late mother's prescription drug addiction
+May 1, 2018
+Police dogs at risk of overdoses in opioid epidemic
+Feb 19, 2018
+Man charged with homicide in friend's overdose death
+Apr 23, 2018
+More than 200 doctors stay on Medicare rolls despite disciplinary actions
+May 18, 2018
+Johnson links opioid epidemic to Medicaid
+Jan 17, 2018
+Stop opioid addiction where it starts: in hospitals
+Jan 15, 2018
+Mukwonago student raises $15K for Your Choice to Live
+Oct 1, 2018
+County lawsuits follow Journal Sentinel stories
+Nov 7, 2017
+The opioid epidemic: Looking for solutions
+Feb 5, 2018
+Documentary about opioid addiction targeted to state middle and high school
+Sep 20, 2017
+Waukesha County District 1 race features two newcomers
+Feb 26, 2018
+Documentary about opioid addiction targeted to state middle and high school
+Sep 20, 2017
+Two-thirds of counties have now sued opioid-makers
+Nov 29, 2017
+County gets $2.6 million in grants to battle opioids
+Nov 27, 2017
+Baldwin introduces bill on opioid safety
+Nov 15, 2017
+Photos: Sen. Tammy Baldwin holds discussion on opioid crisis
+Apr 10, 2017
+County to sue opioid makers and distributors
+Nov 2, 2017
+Tomah VA whistleblower opposes Baldwin re-election
+Oct 4, 2018
+Painful truth: We're not 'literate' about pain
+Feb 9, 2018
+PolitiFact: Impact of opioid abuse in Wisconsin
+Oct 26, 2017
+County weighs lawsuits against drug-makers for costs of opioid epidemic
+Oct 17, 2017
+Medicaid a factor in America's opioid epidemic
+Jan 15, 2018
+Acryl fentanyl linked to 17 deaths in Milwaukee County
+Jun 28, 2017
+Drug deaths in Milwaukee County are worse than ever
+Nov 30, 2017
+Beat opioid crisis using tools of public health
+Feb 20, 2018
+Listening sessions on illegal drugs scheduled
+Oct 20, 2017
+Khatri: Congress gave birth to the opioid crisis
+Dec 12, 2017
+MFD offering mail-back envelopes for medication
+Feb 10, 2018
+Friend gets prison for Cudahy man's fatal OD
+Dec 1, 2017
+County panel backs lawsuits against opioid makers
+Oct 19, 2017
+Johnson's SOFA Act would fight opioid epidemic
+Jan 29, 2018
+Schools considering allowing naloxone to stop effects of opioid overdoses
+Jan 12, 2018
+Scott Walker signs bill to crack down on fentanyl
+Nov 3, 2017
+Sandi Lybert turns family tragedy into message of hope
+Nov 3, 2017
+FDA wants opioid Opana ER off the market
+Jun 9, 2017
+Outside panel reviews Zablocki VA psychiatrist
+Aug 24, 2017
+What drove the homicide spike in Milwaukee?
+Dec 22, 2017
+Medical examiner confirms boy died of overdose
+May 4, 2017
+South Milwaukee to get tough on opioid epidemic
+Sep 19, 2017
+Are Wisconsin elections at risk to hackers?
+Sep 17, 2018
+Baldwin backed by parents, widow of vet who died at Tomah VA
+Sep 27, 2018
+28 counties sue drug-makers contributing to opioids crisis
+Nov 7, 2017
+Opioid prescribing practices reviewed at Zablocki VA
+Aug 22, 2017
+Vukmir hits Baldwin on Tomah VA; Dems focus on Vukmir's ALEC ties
+Sep 26, 2018
+6 things you need to know about the Tomah VA scandal
+Sep 26, 2018
+Wisconsin board outlaws synthetic opioid U-47700
+Sep 21, 2016
+Politics of pain
+Sep 19, 2016
+Walker announces task force on opioid abuse
+Sep 22, 2016
+MU Law Review article breaks news on DEA, opioid fight
+Oct 17, 2017
+Brannon, Goldman: Shenanigans cause problems for prisons, taxpayers
+Jan 5, 2017
+Crowley: Legalize marijuana to combat growing opioid epidemic
+Jul 17, 2017
+How 6 Milwaukee kids died in 5 days
+Jul 10, 2017
+Rural opioid defendants appear in court
+Apr 4, 2017
+Sen. Ron Johnson tells students healthcare is a 'privilege'
+Oct 6, 2017
+Editorial: Opioid epidemic requires ‘team effort’
+Sep 27, 2016
+Assembly takes up bills on election recounts and fentanyl
+Jun 21, 2017
+Legislators can act in the public's interest
+Jun 16, 2017
+Mom charged with giving toddler 'chill pill' set for trial
+Mar 17, 2017
+Abele seeks $1.1 million to fight opioids, addiction
+Sep 20, 2017
+Mother accused of leading opioid ring
+Apr 4, 2017
+Ridge: U.S. must plug the loophole in opioid trafficking
+May 26, 2017
+HHS acts on Johnson opioid legislation
+Nov 2, 2016
+Just the FAQs: Impact of opioids on children
+May 11, 2017
+In Harm's Way: Children are drug epidemic's innocent victims
+May 12, 2017
+Paul Ryan: Let’s take decisive action on opioid abuse
+May 9, 2016
+Opoids: A public health response required
+Sep 8, 2016
+PolitiFact: Heroin and cocaine vs. prescription painkillers
+Apr 19, 2017
+Gifford: Fighting opioid abuse
+Sep 7, 2016
+Cultural shift needed on opioids
+Sep 1, 2016
+Schneider: The real story of the Democrats' new slogan
+Jul 25, 2017
+Walker signs bills fighting opioid abuse
+Jul 17, 2017
+Tims-MBP:MSJO2 twaterman$ 
