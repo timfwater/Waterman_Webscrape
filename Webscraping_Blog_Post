@@ -1,0 +1,106 @@
+Purpose for Research:
+
+For the past two years, the American Life Expectancy has been on the decline.
+
+This downward trend represents a departure from both the past century of American experience, as well as a departure from the broader aggregate trend of increased life expectancy throughout the history of humanity.
+
+This phenomenon is particularly disturbing in that much of this trend stems from the growth in a specific category of mortality, referred to as "Deaths of Despair" (DOD).
+
+These deaths include overdose, suicide, and other forms of mortality that are heavily correlated with depression, disillusionment, and stem from a general lack of hope for the future.
+
+Opioid abuse and overdose has taken a particularly predominant role in this crisis.
+
+This trend implies that the increase in life expectancy that is gained through improvement in medical care and technology, is, on average, being eclipsed by deaths of those who no longer possess the will to live.
+
+Although the causes of this phenomenon are complex and multi-dimensional, they are also predominantly societal as opposed to physiological, as might be an infectious or chronic disease.
+
+Therefore, it would appear that a national public health strategy would represent an essential component of any comprehensive response to this crisis.
+
+Any successful national public health initiative requires a significant degree of public awareness. Therefore, the web-scraping techniques acquired through the NYC Data Science Academy were implemented in order to assess the degree to which the news media has been fostering this environment of public awareness.
+
+
+Methodology and Execution:
+
+Three states that have demonstrated some of the greatest increase in opioid overdose in recent years, Delaware, Pennsylvania, and Wisconsin, were selected for analysis. A prominent online newspaper was selected to analyze each of these states: Delaware Online <https://www.delawareonline.com/>, the Milwaukee Journal Sentinel <https://www.jsonline.com/>, and the Pittsburgh Tribune Review <https://triblive.com/>
+
+Each of these 3 newspapers were assessed with 5 different "search-terms" related to Deaths of Despair. These 5 terms included: "Overdose", "Suicide", "Opioid", "Naloxone", and "Alcoholism".
+
+Naloxone is an opioid-receptor-antagonist, meaning that the molecule attaches to opioid receptors in the brain, and removes any opioid molecule residing on the receptor. Therefore Naloxone is an effective means of reversing an overdose, and is a powerful tool in combating the opioid crisis.
+
+Each of these 5 search-terms were entered into the search bar for each of the 3 newspapers discussed. This resulted in a total of 15 search-results-pages, and these search pages (i.e. each representing all newspaper articles pertaining to the particular search-term in question) constituted the basis of the actual web-scraping itself.
+
+Selenium was used to scrape each of the previously mentioned 15 search-results pages. The following 3 pieces of information were scraped for each news article rendered:
+	Article Title
+	Article Date
+	Article Summary (where available)
+
+Multiple issues were encountered, which required troubleshooting to address. These issues include, but were not limited to:
+•	Programming an infinite "scroll" function in order to fully load search-results pages, where appropriate.
+•	Programming a function to address "pop-up" advertisements.
+•	Full article texts could not be rendered in a consistent fashion, as originally intended. This was due to the fact that there was no consistent URL pattern across archived news articles, as many articles were sourced from secondary sources, such as Reuters or the Associated Press
+•	Article Summaries often escaped the extractive capabilities of Selenium, for reasons that could not be identified upon expert review.
+
+Upon scraping all 15 search-results webpages, the articles were sorted by year, and the annual tallies were tabulated accordingly. These annual numbers were then transformed into a series of rate-of-change statistics, each in relation to a static base year for comparison.
+
+(i.e. a value of 200% for "2014 Growth" represents a tripling of the volume of coverage in 2014 over the base year. A value of 200% again in "2015 Growth" would infer that the volume of coverage was the same in 2015 as in 2014, while both represent a tripling over base-year coverage).
+
+For Delaware and Pennsylvania, the base year was 2013. For Wisconsin, due to limited online archives, the base year was 2016
+
+Additionally, word clouds were implemented where possible, to identify article sentiment. This was predominantly implemented upon search results pertaining to Pennsylvania, as the Pittsburg Tribune's website structure was more accommodating to the extraction of article summary text.
+
+The overdose rate for each state was acquired from various online databases. Values for 2017 and 2018, which have yet to be released, were projected with a basic linear method.
+
+Findings: 
+
+As can be seen in the 5 graphs representing each of the 5 key-search terms, a general growth in news coverage was experienced across all assessed topics that pertain to Deaths of Despair.
+
+Search terms closely related to Opioids (Opioid, Overdose) grew in particular fashion. In certain instances, the coverage of certain topics grew by as much as 10 or 20 fold or more.
+
+When assessed by State, Pennsylvania displayed a particular growth in coverage concerning opioids, with approximately one article being released per month on the topic in 2013, to an article in 2018 being released nearly daily.
+
+However, the growth of overdose coverage did not appear to keep pace in Pennsylvania when compared to the growth in the overdose rate. For a time the growth in overdoses overtook the growth in the rate of overdose coverage. However this would appear to have changed in recent years.
+
+Delaware demonstrated consistent growth in conversation around all 3 of the opioid-related search-terms (opioid, overdose, naloxone) over the past 5 years. The growth of all of these topics exceeded the rate of growth in actual overdoses. Additionally, Delaware's overdose rate grew at a slower rate than some of the other states mentioned
+
+Wisconsin's coverage in all topics, including overdose, grew substantially faster than their rate of growth in overdoses. However, with the Milwaukee Journal Sentinel's archives only reaching back to 2016, so as to only provide this as a base-year, it is more difficult to gauge the true trend over a longer timeframe.
+
+Summary:
+
+Overall, it would appear that the media has made a demonstrated effort in recent years to increase their coverage of topics that pertain to Deaths of Despair.
+
+Logic would dictate that any causal relationship across this phenomenon would predominantly manifest with the DOD crisis serving as the independent variable, which drives the dependent variable, being the rate of actual coverage.
+
+However, it would ultimately be hoped that this growth in media coverage, as the attention/initiatives that stemmed from this coverage, would eventually influence the opposite relationship. That is, it would be hoped that the secondary impacts of news coverage (i.e. policy/societal initiatives) would serve as mediating variables, thereby reducing the overdose rate, suicide rate, and related vital statistics.
+
+It is possible that Delaware may be demonstrating the above-described activity, if only in relative terms. Although the overdose rate continues to climb, it is climbing at a markedly lower rate than the coverage of multiple opioid-related topics, including Naloxone. Furthermore, this trend has been consistently demonstrated over the observed period.
+
+It might be of value to investigate Delaware further, both in terms of additional web scraping, (with an emphasis on natural language processing), as well as a more general literature review of social policies/initiatives concerning opioid abuse/overdose initiated over this timeframe. This might indicate what a successful, comprehensive campaign to address the issue might look like.
+
+It is possible that policies in Delaware to improve access to Naloxone have stemmed from, or are being represented through, the increase in coverage concerning the valuable life-saving drug. This might in turn have played a role in reducing the overdose rate below what it might have alternately been.
+
+Although Pennsylvania has greatly increased their coverage of opioids in 2017 and 2018, these changes are far more pronounced as any growth before these two years. Indeed, in 2016, the growth in the overdose rate rose faster than the growth in the rate of overdose coverage. Therefore it could be construed that Pennsylvania (or the Pittsburg Review more specifically) had previously not been covering the opioid crisis to the extent appropriate, and a conscious effort was then made to correct this prior oversight. Therefore, Pennsylvania could be seen as an example of a state that was behind the times on this issue, but is working hard to correct for this prior lapse. Again, a more substantive literature review might better clarify this situation.
+
+Further Steps:
+
+For each of the states discussed, it would be of value to have a national metric for benchmark purposes. Developing this national rate could either be acquired through scraping a prominent national publication, or perhaps a national RDF Site Summary (RSS) newsfeed (RDF Site Summary, a news format that collects articles on a specified topic across publications, according to specified search criteria).
+
+Indeed, the incorporation of a RSS feed for additional scraping might provide a more representative body of articles to assess, as the specific newspapers assessed were localized, and likely incorporate a degree of specific editorial bias. However such a switch would likely require additional technical challenges and methodological considerations in order to render results that are comparable/consistent with the prior research.
+
+In lieu of incorporating a RSS assessment, a wider range of newspapers could be scraped to assess a wider scope of coverage.
+
+Additionally, a greater degree of natural language processing could be applied to the text acquired, particularly in articles related to either Delaware or Naloxone, as the data collected might indicate that there are further details concerning this state and search terms, details that could provide valuable context on how to actually address opioid abuse, and Deaths of Despair more generally. 
+
+Again, it is important to note that the 2017-2018 overdose rates have not been released yet, and linear projections based off of past observations were implemented for demonstrative purposes. Therefore, it is possible that some of these states have refuted their recent history, and actually demonstrated a decrease in their overdose rate. If this is the case, it is possible the news coverage discussed has made a more impactful role in addressing the crisis that described through this analysis.
+
+Conclusion:
+
+There has been an undisputed growth in the media coverage concerning topics related to Deaths of Despair in recent years.
+
+Although this trend can be reasonably interpreted as representing a greater public awareness, unless this awareness also spurs action, it is unlikely to greatly change the corresponding trends of increased mortality.
+
+For further details, it would likely be of value to engage in literature reviews of the policies/initiatives in the states discussed, in order to determine if the increase in coverage has transferred itself into action on the ground.
+
+Lastly, it is worth noting that even if opioids abuse could be specifically addressed, it is likely just a symptom of a larger problem. Unless the underlying sources of this widespread societal despair, it is likely that the mortality trends will continue manifesting themselves in other ways.
+
+
+
